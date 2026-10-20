@@ -1,0 +1,87 @@
+body{
+    border:1px solid black;
+}
+.fixed-products{
+    border: 1px solid red;
+}
+.fixed-products-heading{
+    border:1px solid green;
+    text-align: center;
+}
+.fixed-products-heading h2{
+    font-size: xx-large;
+
+}
+.f-products{
+    border:1px dashed red;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #000;
+}
+.f-product{
+    height:350px;
+    width:250px;
+
+    box-sizing: border-box;
+    margin:5px;
+    text-align: center;
+    align-content: space-around;
+    border:2px outset gainsboro;
+
+}
+.book-btn{
+    position:absolute;
+
+
+    padding:10px 30px;
+    background: #000;
+    color: white;
+    border: none;
+    transform: translateX(-50%);
+
+    opacity:0;
+    visibility: hidden;
+    cursor: pointer;
+
+
+
+
+}
+
+.f-product:hover .book-btn{
+    opacity:1;
+    visibility: visible;
+}
+#f-pro-1,
+#f-pro-2,
+#f-pro-3,
+#f-pro-4{
+    background-position: center;
+    background-size: cover;
+}
+#f-pro-1{
+    background-image: url(black-dress-1.jpeg);
+}
+#f-pro-2{
+    background-image: url(black-dress-2.jpg);
+}
+#f-pro-3{
+    background-image: url(black-dress-3.jpg);
+}
+#f-pro-4{
+    background-image: url(black-dress-4.jpg);
+    background-color: red;
+}
+@media(max-width:900px){
+    .f-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items:center;
+    }
+}
+@media(max-width:768px){
+    .f-products{
+        grid-template-columns: 1fr;
+        justify-items:center;
+    }
+}

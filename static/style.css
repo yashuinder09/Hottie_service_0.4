@@ -67,6 +67,9 @@ body{
     .hamburger{
         display: block;
     }
+    .hero-2-e{
+        display: block;
+    }
     .nav-links{
         display: none;
         position: absolute;
@@ -140,104 +143,74 @@ body{
         width: 30px;
     }
 
-        /* Hero-2 */
-        .hero-2{
-        background-color: rgb(250, 160, 175);
-        text-align: center;
-        border-radius:10px;
-        padding:10px;
-        margin:5px;
-
-    }
-    .hero-2 h2{
-        font-size: xx-large;
-    }
-    #txt-hero-2-black{
-        border-bottom:5px solid violet;
-        border-radius: 50%;
-        margin:10px;
-        padding:10px;
-
-    }
-    #txt-hero-2-volite{
-        color: purple;
-    }
-    .hero-2 p{
-        color: white;
-        font-size:20px;
-
-
-    }   
-
     /* Hero-2-e */
     .hero-2-e{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap:20px;
 
-}
-    .hero-2-e-img{
-        height:80vh;
-        width:350px;
-        background-image: url(images/sexy-1.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius:10px;
-        border-bottom:5px violet solid;
-        margin:5px;
+    .hero-2-e-content{
+        text-align: center;
+
     }
+    .hero-2-e-content h2{
+        font-size:30px;
+    }
+    .hero-2-e-content p{
+        font-size:20px;
+    }
+    .hero-2-e-content p b{
+        color:yellow;
+    }
+    .hero-2-e-img{
+        border:5px solid yellow;
+        margin:10px;
+        margin-right:50px;
 
-.hero-3{
-    border-radius:10px;
-    background-color: rgb(250, 160, 175);
+    }
+ 
+}
+
+@media (max-width:768px){
+    .hero-2-e{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    .hero-2-e-img{
+        width: fit-content;
+        margin: 0%;
+    }
+}
+
+
+
+
+
+.hero-6-e{
     text-align: center;
-    padding:5px;
     margin:5px;
-}
-.hero-3-heading{
-    display: flex;
-    gap:10px;
-    justify-content: center;
 
 }
-#txt-hero-3-volite{
-    color:purple;
-}
-.hero-3 h2{
-    color: white;
+
+.hero-6-e h2{
+    color:lightgreen;
     font-size: xx-large;
 }
-.hero-3 p{
-    color: white;
-    font-size: 20px;
+.hero-6-e p{
+    color:white;
+    font-size: large;
 }
-@media(max-width:768px){
-    .hero-3-heading{
-        display: grid;
-
-    }
+.hero-6-e  p b a{
+    color: orange;
+    text-decoration: none;
+    font-size: larger;
 }
+.hero-6-e  p b {
+    color: orange;
+    text-decoration: none;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 .hero-4{

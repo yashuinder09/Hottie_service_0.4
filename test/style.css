@@ -1,0 +1,42 @@
+ /* Hero-2-e */
+    .hero-2-e{
+    border: 1px solid wheat;
+    display: flex;
+    gap:20px;
+
+    .hero-2-e-content{
+        text-align: center;
+
+    }
+    .hero-2-e-content h2{
+        font-size:30px;
+    }
+    .hero-2-e-content p{
+        font-size:20px;
+    }
+    .hero-2-e-content p b{
+        color:yellow;
+    }
+    .hero-2-e-img{
+        border:5px solid yellow;
+        margin:10px;
+        margin-right:50px;
+
+    }
+
+}
+body{
+    background:purple;
+}
+@media (max-width:768px){
+    .hero-2-e{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    .hero-2-e-img{
+        width: fit-content;
+        margin: 0%;
+    }
+}
